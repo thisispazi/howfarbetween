@@ -32,6 +32,7 @@ export default function ImpressumPage() {
       </main>
       <footer style={{ background: '#0f172a', color: '#94a3b8', padding: '32px 0', textAlign: 'center' }}>
         <Link href="/" style={{ color: '#94a3b8', textDecoration: 'none' }}>← Back to HowFarBetween.com</Link>
+        <Link href="/about" style={{ color: '#94a3b8', textDecoration: 'none' }}>About</Link>
       </footer>
     </div>
   )

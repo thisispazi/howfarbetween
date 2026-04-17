@@ -304,6 +304,7 @@ export default function HomePage() {
           <div style={{ display: 'flex', gap: '24px', justifyContent: 'center', fontSize: '13px' }}>
             <Link href="/privacy" style={{ color: '#94a3b8', textDecoration: 'none' }}>Privacy Policy</Link>
             <Link href="/legal" style={{ color: '#94a3b8', textDecoration: 'none' }}>Legal Notice</Link>
+            <Link href="/about" style={{ color: '#94a3b8', textDecoration: 'none' }}>About</Link>
           </div>
         </div>
       </footer>

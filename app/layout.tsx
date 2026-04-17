@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   },
   description: 'Calculate the distance between any two cities in the world. Flight time, driving time, walking time and more.',
   metadataBase: new URL('https://howfarbetween.com'),
+  verification: {
+    google: 'ARhZQ5ZYavGvWGDD4zs12jJeLkEMasFJ9pfd2HhcpeE',
+  },
   openGraph: {
     siteName: 'HowFarBetween.com',
     type: 'website',

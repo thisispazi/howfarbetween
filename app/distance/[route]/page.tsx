@@ -1,4 +1,5 @@
 export const runtime = 'edge'
+
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { CITIES, getDistanceKm, getTravelTimes, formatDuration, crossesOcean, getCityBySlug, getNearbyCities } from '../../lib/cities'

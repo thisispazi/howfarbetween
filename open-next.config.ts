@@ -1,13 +1,14 @@
-import type { OpenNextConfig } from "open-next/types/open-next";
-
-const config: OpenNextConfig = {
+const config = {
   default: {
     override: {
       wrapper: "cloudflare-node",
       converter: "edge",
+      proxyExternalRequest: "fetch",
+      incrementalCache: "dummy",
+      tagCache: "dummy",
+      queue: "dummy",
     },
   },
-  buildCommand: "npx next build",
 };
 
 export default config;

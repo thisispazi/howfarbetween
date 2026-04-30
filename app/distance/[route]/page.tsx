@@ -1,4 +1,3 @@
-export const runtime = 'edge'
 export async function generateStaticParams() {
   const { CITIES } = await import('../../lib/cities')
   const params = []

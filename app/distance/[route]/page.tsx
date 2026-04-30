@@ -1,4 +1,16 @@
 export const runtime = 'edge'
+export async function generateStaticParams() {
+  const { CITIES } = await import('../../lib/cities')
+  const params = []
+  for (const fromCity of CITIES) {
+    for (const toCity of CITIES) {
+      if (fromCity.slug !== toCity.slug) {
+        params.push({ route: `${fromCity.slug}-to-${toCity.slug}` })
+      }
+    }
+  }
+  return params
+}
 
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
